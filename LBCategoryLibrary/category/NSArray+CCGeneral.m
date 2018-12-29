@@ -7,11 +7,11 @@
 //
 
 #import <objc/runtime.h>
-#import "NSArray+LBArray.h"
+#import "NSArray+CCGeneral.h"
 
-@implementation NSArray (LBArray)
+@implementation NSArray (CCGeneral)
 
-+(void)load {
++ (void)load {
     
     
     // 这里使用dispatch_once_t保证SEL和IMP(函数指针)交换只进行一次，否则在子类调用父类方法时该方法可能会被执行两次，导致出现不可预知的错误
@@ -34,7 +34,7 @@
  *  这里进行容错处理，当下标越界时返回nil
  *  当[self objectAtIndex:index]时实际实际调用这里的方法实现
  */
-- (id)lb_objectAtIndex:(NSUInteger) index {
+- (id)cc_objectAtIndex:(NSUInteger)index {
 
     if (self.count-1 < index) {
         // 这里做一下异常处理，不然都不知道出错了。
@@ -47,7 +47,9 @@
 //            NSLog(@"%@", [exception callStackSymbols]);
             return nil;
         }
-        @finally {}
+        @finally {
+            
+        }
     } else {
         return [self lb_objectAtIndex:index]; // 这里实际调用的是objectAtIndex:方法实现
     }

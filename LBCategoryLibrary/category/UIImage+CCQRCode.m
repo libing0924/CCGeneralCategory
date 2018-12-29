@@ -6,12 +6,12 @@
 //  Copyright © 2017年 李冰. All rights reserved.
 //
 
-#import "UIImage+QRCodeImage.h"
+#import "UIImage+CCQRCode.h"
 
-@implementation UIImage (QRCodeImage)
+@implementation UIImage (CCQRCode)
 
-+ (UIImage *)createNonInterpolatedUIImageFormCIImage:(CIImage *)image withSize:(CGFloat) size
-{
++ (UIImage *)createNonInterpolatedUIImageFormCIImage:(CIImage *)image withSize:(CGFloat)size {
+    
     CGRect extent = CGRectIntegral(image.extent);
     CGFloat scale = MIN(size/CGRectGetWidth(extent), size/CGRectGetHeight(extent));
     
@@ -38,7 +38,7 @@
     return img;
 }
 
-+ (UIImage *)_QRCodeImageWithURLString:(NSString *)urlString withSize:(CGFloat)size {
++ (UIImage *)imageWithURLString:(NSString *)urlString withSize:(CGFloat)size {
     CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
     
     [filter setDefaults];

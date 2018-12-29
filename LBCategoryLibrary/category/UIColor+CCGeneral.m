@@ -6,9 +6,9 @@
 //  Copyright © 2017年 李冰. All rights reserved.
 //
 
-#import "UIColor+LBExtend.h"
+#import "UIColor+CCGeneral.h"
 
-@implementation UIColor (LBExtend)
+@implementation UIColor (CCGeneral)
 
 + (UIColor*) colorWithHex:(NSInteger)hexValue alpha:(CGFloat)alphaValue
 {

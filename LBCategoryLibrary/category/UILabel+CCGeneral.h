@@ -13,7 +13,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UILabel (LBExtend)
+@interface UILabel (CCGeneral)
 
 @property (nonatomic, assign, readonly) CGFloat lb_textWidth;
 

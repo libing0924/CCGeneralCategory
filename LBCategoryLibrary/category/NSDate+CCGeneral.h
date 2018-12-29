@@ -17,7 +17,7 @@
 // 相关类NSCalendar NSDateComponents
 
 
-@interface NSDate (LBFormate)
+@interface NSDate (CCGeneral)
 
 #pragma mark 时间、时间戳、时间字符串转换
 

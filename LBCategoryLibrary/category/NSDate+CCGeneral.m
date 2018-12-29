@@ -6,9 +6,9 @@
 //  Copyright © 2017年 李冰. All rights reserved.
 //
 
-#import "NSDate+LBFormate.h"
+#import "NSDate+CCGeneral.h"
 
-@implementation NSDate (LBFormate)
+@implementation NSDate (CCFormate)
 
 + (NSString *) timeStringWithTimestamp:(id) timestamp formatterString:(NSString *) formatterStr {
     

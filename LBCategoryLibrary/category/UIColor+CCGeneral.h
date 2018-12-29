@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (LBExtend)
+@interface UIColor (CCGeneral)
 
 // 根据十六进制换算iOS色彩空间 输入：0xFFFFFF
 + (UIColor*) colorWithHex:(NSInteger)hexValue alpha:(CGFloat)alphaValue;

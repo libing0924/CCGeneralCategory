@@ -1,15 +1,14 @@
 //
-//  NSString+LBVerification.m
+//  NSString+LBVerification.h
 //  LBCategoryLibrary
 //
-//  Created by smufs on 2017/3/7.
+//  Created by smufs on 2015/3/7.
 //  Copyright © 2017年 李冰. All rights reserved.
 //
 
-#import "NSString+LBVerification.h"
+#import "NSString+CCGeneral.h"
 
-@implementation NSString (LBVerification)
-
+@implementation NSString (CCGeneral)
 
 //检查是否只包含字母和数字
 - (BOOL)isOnlyLeterAndNumber {
@@ -20,44 +19,24 @@
     
     BOOL isMatch = [pred evaluateWithObject:self];
     
-    if (!isMatch) {
-        return NO;
-    }
+    if (!isMatch) return NO;
+        
     return YES;
-    
 }
 
 - (BOOL) isTelephoneNumber {
     
-    if ([self length] == 0) {
-        
-        //        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:nil message:NSLocalizedString(@"\n请您输入手机号", nil) delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        //        [alert show];
-        return NO;
-        
-    }
-    
-    //1[0-9]{10}
-    
-    //^((13[0-9])|(15[^4,\\D])|(18[0,5-9]))\\d{8}$
-    
-    //    NSString *regex = @"[0-9]{11}";
+    if ([self length] == 0) return NO;
     
     NSString *regex = @"^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$";
-    
     
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     
     BOOL isMatch = [pred evaluateWithObject:self];
     
-    if (!isMatch) {
-        
-        return NO;
-        
-    }
+    if (!isMatch) return NO;
     
     return YES;
-    
 }
 
 #pragma mark - 检查有没有表情
@@ -102,14 +81,9 @@
 
 - (BOOL) isEmpty{
     
-    if ([self isKindOfClass:[NSNull class]]) {
-        return true;
-    }
+    if ([self isKindOfClass:[NSNull class]]) return true;
     
-    
-    if ([self isKindOfClass:[NSNumber class]]) { //如果是数字 //不能验证数字
-        return false;
-    }
+    if ([self isKindOfClass:[NSNumber class]]) return false;
     
     NSString *str;
     
@@ -125,11 +99,8 @@
     //Returns a new string made by removing from both ends of the receiver characters contained in a given character set.
     NSString *trimedString = [str stringByTrimmingCharactersInSet:set];
     
-    if ([trimedString length] == 0) {
-        return true;
-    }
-    
-    
+    if ([trimedString length] == 0) return true;
+        
     if( nil == str || (0 == str.length && ![str isEqualToString:@""]) ||[str.description isEqualToString:@"(null)"] ||[str isEqualToString:@""]){
         return true;
     }else{
@@ -139,12 +110,13 @@
 }
 
 
-- (id)JSONStringConvert;
-{
+- (id)JSONStringConvert {
+    
     NSData* data = [self dataUsingEncoding:NSUTF8StringEncoding];
     __autoreleasing NSError* error = nil;
     id result = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
     if (error != nil) return nil;
+    
     return result;
 }
 
@@ -184,34 +156,7 @@
 #pragma mark - 检查是否包含特殊字符串
 - (BOOL) hasSpecialString {
     
-    if (self.length <1) {
-        return false;
-    }
-    
-    //    int length = [[NSString stringWithFormat:@"%ld",[str length]]intValue];
-    //
-    //    NSMutableString *String = [[NSMutableString alloc]initWithString:str];
-    //
-    //    for(int i = length - 1; i >= 0; i--) {
-    //        int a = [str characterAtIndex:i];
-    //        if( a > 0x4e00 && a < 0x9fff){
-    //
-    //            [String replaceCharactersInRange:NSMakeRange(i,1) withString:@""];
-    //        }
-    //
-    //    }
-    //
-    //    NSCharacterSet *nameCharacters = [[NSCharacterSet characterSetWithCharactersInString:@"_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"] invertedSet];
-    //    NSRange userNameRange = [String rangeOfCharacterFromSet:nameCharacters];
-    //    if (userNameRange.location != NSNotFound) {
-    //        NSLog(@"包含特殊字符");
-    //        return true;
-    //    }else{
-    //        return false;
-    //    }
-    //    NSString *re = @"[~!/@#$%^&*()-=+\\|[{}]\'\"<>/?]+";
-    //    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", re];
-    //    return [pred evaluateWithObject:str];
+    if (self.length <1) return false;
     
     NSCharacterSet *doNotWant = [NSCharacterSet characterSetWithCharactersInString:@"[]{}（#%-*+=）\\|~(＜＞$%^&*)_+？? "];
     NSRange range = [self rangeOfCharacterFromSet:doNotWant];

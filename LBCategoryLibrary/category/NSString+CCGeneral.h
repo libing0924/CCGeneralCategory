@@ -2,13 +2,13 @@
 //  NSString+LBVerification.h
 //  LBCategoryLibrary
 //
-//  Created by smufs on 2017/3/7.
+//  Created by smufs on 2015/3/7.
 //  Copyright © 2017年 李冰. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (LBVerification)
+@interface NSString (CCGeneral)
 
 /** 检查是否只包含字母和数字*/
 - (BOOL) isOnlyLeterAndNumber;

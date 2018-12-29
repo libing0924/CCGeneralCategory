@@ -6,9 +6,9 @@
 //  Copyright © 2017年 李冰. All rights reserved.
 //
 
-#import "UILabel+LBExtend.h"
+#import "UILabel+CCGeneral.h"
 
-@implementation UILabel (LBExtend)
+@implementation UILabel (CCGeneral)
 
 - (CGFloat)lb_textWidth {
 

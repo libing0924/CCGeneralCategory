@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (QRCodeImage)
+@interface UIImage (CCQRCode)
 
 // 根据字符串和size创建UIImage二维码图片对象
-+ (UIImage *)_QRCodeImageWithURLString:(NSString *)urlString withSize:(CGFloat)size;
++ (UIImage *)imageWithURLString:(NSString *)urlString withSize:(CGFloat)size;
 
 @end

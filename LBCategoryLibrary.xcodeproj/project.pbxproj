@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		600A0A871E7FA40700932702 /* LBTextLayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 600A0A861E7FA40700932702 /* LBTextLayerLabel.m */; };
 		601C9B3D1E6E52D5006877F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C9B3C1E6E52D5006877F8 /* main.m */; };
 		601C9B401E6E52D5006877F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C9B3F1E6E52D5006877F8 /* AppDelegate.m */; };
 		601C9B431E6E52D5006877F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C9B421E6E52D5006877F8 /* ViewController.m */; };
@@ -17,10 +16,12 @@
 		601C9B561E6E52D5006877F8 /* LBCategoryLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C9B551E6E52D5006877F8 /* LBCategoryLibraryTests.m */; };
 		601C9B611E6E52D5006877F8 /* LBCategoryLibraryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C9B601E6E52D5006877F8 /* LBCategoryLibraryUITests.m */; };
 		601C9B7F1E6E77D4006877F8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 601C9B7E1E6E77D4006877F8 /* README.md */; };
-		601C9B8B1E6F9546006877F8 /* LBDataSecure.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C9B8A1E6F9546006877F8 /* LBDataSecure.m */; };
-		601C9B921E6F9809006877F8 /* LBDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C9B911E6F9809006877F8 /* LBDeviceInfo.m */; };
-		604A571E1ECD34BE00A0C888 /* LBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 604A571D1ECD34BE00A0C888 /* LBLocationManager.m */; };
-		60E6069C1E728233001BA598 /* LBDataSecure+RSAEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6069B1E728233001BA598 /* LBDataSecure+RSAEncrypt.m */; };
+		D6F9007721D7459A00A7F4CB /* NSDate+CCGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9004D21D7459800A7F4CB /* NSDate+CCGeneral.m */; };
+		D6F9007B21D7459A00A7F4CB /* NSArray+CCGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9005521D7459800A7F4CB /* NSArray+CCGeneral.m */; };
+		D6F9007F21D7459A00A7F4CB /* UILabel+CCGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9006121D7459900A7F4CB /* UILabel+CCGeneral.m */; };
+		D6F9008021D7459A00A7F4CB /* UIColor+CCGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9006321D7459900A7F4CB /* UIColor+CCGeneral.m */; };
+		D6F9008221D7459A00A7F4CB /* UIImage+CCQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9006721D7459900A7F4CB /* UIImage+CCQRCode.m */; };
+		D6F9008C21D749CE00A7F4CB /* NSString+CCGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F9008B21D749CE00A7F4CB /* NSString+CCGeneral.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		600A0A851E7FA40700932702 /* LBTextLayerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTextLayerLabel.h; sourceTree = "<group>"; };
-		600A0A861E7FA40700932702 /* LBTextLayerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTextLayerLabel.m; sourceTree = "<group>"; };
 		601C9B381E6E52D5006877F8 /* LBCategoryLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBCategoryLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		601C9B3C1E6E52D5006877F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		601C9B3E1E6E52D5006877F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,16 +59,18 @@
 		601C9B601E6E52D5006877F8 /* LBCategoryLibraryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBCategoryLibraryUITests.m; sourceTree = "<group>"; };
 		601C9B621E6E52D5006877F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		601C9B7E1E6E77D4006877F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		601C9B891E6F9546006877F8 /* LBDataSecure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBDataSecure.h; sourceTree = "<group>"; };
-		601C9B8A1E6F9546006877F8 /* LBDataSecure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBDataSecure.m; sourceTree = "<group>"; };
-		601C9B901E6F9809006877F8 /* LBDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBDeviceInfo.h; sourceTree = "<group>"; };
-		601C9B911E6F9809006877F8 /* LBDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBDeviceInfo.m; sourceTree = "<group>"; };
-		601C9BAF1E6FD7F5006877F8 /* LBCommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBCommonMacro.h; sourceTree = "<group>"; };
-		601C9BB01E6FDCE0006877F8 /* LBConfigureMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBConfigureMacro.h; sourceTree = "<group>"; };
-		604A571C1ECD34BE00A0C888 /* LBLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLocationManager.h; sourceTree = "<group>"; };
-		604A571D1ECD34BE00A0C888 /* LBLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLocationManager.m; sourceTree = "<group>"; };
-		60E6069A1E728233001BA598 /* LBDataSecure+RSAEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LBDataSecure+RSAEncrypt.h"; sourceTree = "<group>"; };
-		60E6069B1E728233001BA598 /* LBDataSecure+RSAEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LBDataSecure+RSAEncrypt.m"; sourceTree = "<group>"; };
+		D6F9004A21D7459800A7F4CB /* NSArray+CCGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CCGeneral.h"; sourceTree = "<group>"; };
+		D6F9004D21D7459800A7F4CB /* NSDate+CCGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CCGeneral.m"; sourceTree = "<group>"; };
+		D6F9005121D7459800A7F4CB /* UIImage+CCQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CCQRCode.h"; sourceTree = "<group>"; };
+		D6F9005521D7459800A7F4CB /* NSArray+CCGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CCGeneral.m"; sourceTree = "<group>"; };
+		D6F9005E21D7459900A7F4CB /* UILabel+CCGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CCGeneral.h"; sourceTree = "<group>"; };
+		D6F9006121D7459900A7F4CB /* UILabel+CCGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CCGeneral.m"; sourceTree = "<group>"; };
+		D6F9006321D7459900A7F4CB /* UIColor+CCGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CCGeneral.m"; sourceTree = "<group>"; };
+		D6F9006721D7459900A7F4CB /* UIImage+CCQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CCQRCode.m"; sourceTree = "<group>"; };
+		D6F9007021D7459A00A7F4CB /* UIColor+CCGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CCGeneral.h"; sourceTree = "<group>"; };
+		D6F9007121D7459A00A7F4CB /* NSDate+CCGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CCGeneral.h"; sourceTree = "<group>"; };
+		D6F9008A21D749CE00A7F4CB /* NSString+CCGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CCGeneral.h"; sourceTree = "<group>"; };
+		D6F9008B21D749CE00A7F4CB /* NSString+CCGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CCGeneral.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,13 +98,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		600AF0931E83A98C00DA537C /* CALayer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = CALayer;
-			sourceTree = "<group>";
-		};
 		601C9B2F1E6E52D5006877F8 = {
 			isa = PBXGroup;
 			children = (
@@ -128,19 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D67CE341210575E000A63B05 /* category */,
-				60F930021F0A099800157D74 /* NSCalendar */,
-				608C2F801EF9109600478B1B /* NSObject */,
-				604A571B1ECD34A800A0C888 /* Manager */,
-				600AF0931E83A98C00DA537C /* CALayer */,
-				60E607421E77952D001BA598 /* UIWebView */,
 				601C9B7E1E6E77D4006877F8 /* README.md */,
-				60E606F71E766E76001BA598 /* UIImagePickerController */,
-				601C9BAE1E6FD784006877F8 /* Macro */,
-				601C9BAA1E6FCE9F006877F8 /* UIViewController */,
-				601C9BA31E6FAA48006877F8 /* UINavigationBar */,
-				601C9B9F1E6FA6A8006877F8 /* UILabel */,
-				601C9B8F1E6F97E8006877F8 /* Device */,
-				601C9B881E6F94BB006877F8 /* EncryptionDecryption */,
 				601C9B3E1E6E52D5006877F8 /* AppDelegate.h */,
 				601C9B3F1E6E52D5006877F8 /* AppDelegate.m */,
 				601C9B411E6E52D5006877F8 /* ViewController.h */,
@@ -180,98 +162,21 @@
 			path = LBCategoryLibraryUITests;
 			sourceTree = "<group>";
 		};
-		601C9B881E6F94BB006877F8 /* EncryptionDecryption */ = {
-			isa = PBXGroup;
-			children = (
-				601C9B891E6F9546006877F8 /* LBDataSecure.h */,
-				601C9B8A1E6F9546006877F8 /* LBDataSecure.m */,
-				60E6069A1E728233001BA598 /* LBDataSecure+RSAEncrypt.h */,
-				60E6069B1E728233001BA598 /* LBDataSecure+RSAEncrypt.m */,
-			);
-			name = EncryptionDecryption;
-			sourceTree = "<group>";
-		};
-		601C9B8F1E6F97E8006877F8 /* Device */ = {
-			isa = PBXGroup;
-			children = (
-				601C9B901E6F9809006877F8 /* LBDeviceInfo.h */,
-				601C9B911E6F9809006877F8 /* LBDeviceInfo.m */,
-			);
-			name = Device;
-			sourceTree = "<group>";
-		};
-		601C9B9F1E6FA6A8006877F8 /* UILabel */ = {
-			isa = PBXGroup;
-			children = (
-				600A0A851E7FA40700932702 /* LBTextLayerLabel.h */,
-				600A0A861E7FA40700932702 /* LBTextLayerLabel.m */,
-			);
-			name = UILabel;
-			sourceTree = "<group>";
-		};
-		601C9BA31E6FAA48006877F8 /* UINavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UINavigationBar;
-			sourceTree = "<group>";
-		};
-		601C9BAA1E6FCE9F006877F8 /* UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UIViewController;
-			sourceTree = "<group>";
-		};
-		601C9BAE1E6FD784006877F8 /* Macro */ = {
-			isa = PBXGroup;
-			children = (
-				601C9BAF1E6FD7F5006877F8 /* LBCommonMacro.h */,
-				601C9BB01E6FDCE0006877F8 /* LBConfigureMacro.h */,
-			);
-			name = Macro;
-			sourceTree = "<group>";
-		};
-		604A571B1ECD34A800A0C888 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				604A571C1ECD34BE00A0C888 /* LBLocationManager.h */,
-				604A571D1ECD34BE00A0C888 /* LBLocationManager.m */,
-			);
-			name = Manager;
-			sourceTree = "<group>";
-		};
-		608C2F801EF9109600478B1B /* NSObject */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = NSObject;
-			sourceTree = "<group>";
-		};
-		60E606F71E766E76001BA598 /* UIImagePickerController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UIImagePickerController;
-			sourceTree = "<group>";
-		};
-		60E607421E77952D001BA598 /* UIWebView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UIWebView;
-			sourceTree = "<group>";
-		};
-		60F930021F0A099800157D74 /* NSCalendar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = NSCalendar;
-			sourceTree = "<group>";
-		};
 		D67CE341210575E000A63B05 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				D6F9008A21D749CE00A7F4CB /* NSString+CCGeneral.h */,
+				D6F9008B21D749CE00A7F4CB /* NSString+CCGeneral.m */,
+				D6F9004A21D7459800A7F4CB /* NSArray+CCGeneral.h */,
+				D6F9005521D7459800A7F4CB /* NSArray+CCGeneral.m */,
+				D6F9007121D7459A00A7F4CB /* NSDate+CCGeneral.h */,
+				D6F9004D21D7459800A7F4CB /* NSDate+CCGeneral.m */,
+				D6F9007021D7459A00A7F4CB /* UIColor+CCGeneral.h */,
+				D6F9006321D7459900A7F4CB /* UIColor+CCGeneral.m */,
+				D6F9005121D7459800A7F4CB /* UIImage+CCQRCode.h */,
+				D6F9006721D7459900A7F4CB /* UIImage+CCQRCode.m */,
+				D6F9005E21D7459900A7F4CB /* UILabel+CCGeneral.h */,
+				D6F9006121D7459900A7F4CB /* UILabel+CCGeneral.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -409,15 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F9008C21D749CE00A7F4CB /* NSString+CCGeneral.m in Sources */,
+				D6F9007721D7459A00A7F4CB /* NSDate+CCGeneral.m in Sources */,
+				D6F9008021D7459A00A7F4CB /* UIColor+CCGeneral.m in Sources */,
+				D6F9007F21D7459A00A7F4CB /* UILabel+CCGeneral.m in Sources */,
 				601C9B431E6E52D5006877F8 /* ViewController.m in Sources */,
 				601C9B401E6E52D5006877F8 /* AppDelegate.m in Sources */,
-				604A571E1ECD34BE00A0C888 /* LBLocationManager.m in Sources */,
-				601C9B921E6F9809006877F8 /* LBDeviceInfo.m in Sources */,
+				D6F9007B21D7459A00A7F4CB /* NSArray+CCGeneral.m in Sources */,
 				601C9B7F1E6E77D4006877F8 /* README.md in Sources */,
-				600A0A871E7FA40700932702 /* LBTextLayerLabel.m in Sources */,
+				D6F9008221D7459A00A7F4CB /* UIImage+CCQRCode.m in Sources */,
 				601C9B3D1E6E52D5006877F8 /* main.m in Sources */,
-				601C9B8B1E6F9546006877F8 /* LBDataSecure.m in Sources */,
-				60E6069C1E728233001BA598 /* LBDataSecure+RSAEncrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

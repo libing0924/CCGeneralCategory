@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LBCategoryLibrary/LBCategoryLibrary/category/*.{h,m}'
+  s.source_files = 'LBCategoryLibrary/category/*.{h,m}'
   
   # s.resource_bundles = {
   #   'LBModuleServer' => ['/*.png']
